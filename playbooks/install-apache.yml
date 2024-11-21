@@ -1,0 +1,5 @@
+- name: This sets up an httpd webserver
+  hosts: apache
+  #sudo: yes
+  roles:
+    - apache
