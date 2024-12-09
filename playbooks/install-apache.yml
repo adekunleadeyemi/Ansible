@@ -1,5 +1,8 @@
+---
 - name: This sets up an httpd webserver
-  hosts: apache
+  hosts: all
+  gather_facts: yes
+  become: no
   #sudo: yes
   roles:
     - apache
